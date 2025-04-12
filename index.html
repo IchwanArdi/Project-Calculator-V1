@@ -4,45 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Project | Calculator v1</title>
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <table class="table">
-        <tr>
-          <td colspan="4"><input class="input" type="text" name="input" /></td>
-        </tr>
-        <tr>
-          <td class="number aritmatika">ac</td>
-          <td class="number aritmatika">del</td>
-          <td class="number aritmatika">/</td>
-          <td class="number aritmatika">*</td>
-        </tr>
-        <tr>
-          <td class="number">7</td>
-          <td class="number">8</td>
-          <td class="number">9</td>
-          <td class="number aritmatika">-</td>
-        </tr>
-        <tr>
-          <td class="number">6</td>
-          <td class="number">5</td>
-          <td class="number">4</td>
-          <td class="number aritmatika">+</td>
-        </tr>
-        <tr>
-          <td class="number">1</td>
-          <td class="number">2</td>
-          <td class="number">3</td>
-          <td style="background-color: salmon" rowspan="2" class="number">=</td>
-        </tr>
-        <tr>
-          <td colspan="2" class="number">0</td>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" name="input" id="input" readonly />
+      </div>
+      <div class="buttons">
+        <button class="btn action">AC</button>
+        <button class="btn action">DEL</button>
+        <button class="btn operator">/</button>
+        <button class="btn operator">×</button>
 
-          <td class="number">.</td>
-        </tr>
-      </table>
+        <button class="btn number">7</button>
+        <button class="btn number">8</button>
+        <button class="btn number">9</button>
+        <button class="btn operator">-</button>
+
+        <button class="btn number">4</button>
+        <button class="btn number">5</button>
+        <button class="btn number">6</button>
+        <button class="btn operator">+</button>
+
+        <button class="btn number">1</button>
+        <button class="btn number">2</button>
+        <button class="btn number">3</button>
+        <button class="btn equals">=</button>
+
+        <button class="btn number zero">0</button>
+        <button class="btn number">.</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
